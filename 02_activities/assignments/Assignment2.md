@@ -54,7 +54,10 @@ The store wants to keep customer addresses. Propose two architectures for the CU
 **HINT:** search type 1 vs type 2 slowly changing dimensions. 
 
 ```
-Your answer...
+Type 1 slowly changing dimensions (Overwriting): Updates the CUSTOMER_ADDRESS table directly, overwriting old addresses without retaining history.
+
+Type 2 slowly changing dimensions (Retaining): Adds a new record for each address change, keeping historical data. Includes columns like StartDate, EndDate, and IsCurrent.
+...
 ```
 
 ***
